@@ -10,3 +10,5 @@ This is the first try to make a NAT Proxy, which it's used as apps Anti-DDoS, or
 # Note
 
 This is just test version, not final so please stay tuned for the coming updates.
+
+GRE Tunnel not finished yet, still working on it :)
