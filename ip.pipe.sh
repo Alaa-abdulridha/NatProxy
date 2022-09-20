@@ -254,7 +254,7 @@ $IPTABLES -A SYN_FLOOD -j DROP
 ##---------------------
 $IPTABLES -t nat -A PREROUTING -p tcp --dport $GAMESERVER_FIRST_PORT -j DNAT --to-destination $DESTINATION_IP:$GAMESERVER_FIRST_PORT
 $IPTABLES -t nat -A PREROUTING -p tcp --dport $GAMESERVER_SECOND_PORT -j DNAT --to-destination $DESTINATION_IP:$GAMESERVER_SECOND_PORT
-$IPTABLES -t nat -A POSTROUTING -j MASQUERADE
+##$IPTABLES -t nat -A POSTROUTING -j MASQUERADE
 
 
 echo "20000" > /proc/sys/net/ipv4/tcp_max_syn_backlog
